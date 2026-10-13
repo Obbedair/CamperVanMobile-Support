@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Support und Hilfe für die CamperVan Mobile App.">
+  <meta name="theme-color" content="#0a100d">
+  <title>CamperVan Mobile – Support</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="CamperVan Mobile Support – Startseite">
+      <span class="brand-mark" aria-hidden="true">CV</span>
+      <span>CamperVan Mobile</span>
+    </a>
+    <nav aria-label="Seitennavigation">
+      <a href="#hilfe">Hilfe</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="datenschutz/">Datenschutz</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow">SUPPORT // CAMPERVAN SYSTEM</div>
+      <h1 id="hero-title">Hilfe für deine<br><span>CamperVan-App.</span></h1>
+      <p class="hero-copy">
+        Die App verbindet dein iPhone sicher mit dem persönlichen CamperVan-
+        Steuerungssystem. Hier findest du Hilfe zur Einrichtung, Verbindung und
+        zu Benachrichtigungen.
+      </p>
+      <a class="primary-action" href="mailto:christoph.herzog@live.de?subject=CamperVan%20Mobile%20Support">Support kontaktieren</a>
+    </section>
+
+    <section class="status-band" aria-label="Wichtige Voraussetzungen">
+      <div><span>01</span><strong>iOS 16 oder neuer</strong></div>
+      <div><span>02</span><strong>Tailscale verbunden</strong></div>
+      <div><span>03</span><strong>Camper-Server online</strong></div>
+    </section>
+
+    <section class="content-section" id="hilfe" aria-labelledby="help-title">
+      <div class="section-heading">
+        <p class="eyebrow">SCHNELLE HILFE</p>
+        <h2 id="help-title">Die häufigsten Schritte</h2>
+      </div>
+
+      <div class="help-grid">
+        <article>
+          <span class="step">01</span>
+          <h3>Keine Verbindung</h3>
+          <p>Prüfe, ob Tailscale auf dem iPhone aktiv ist und das iPhone sowie der Raspberry Pi im selben Tailnet angemeldet sind.</p>
+        </article>
+        <article>
+          <span class="step">02</span>
+          <h3>Serveradresse prüfen</h3>
+          <p>Öffne in der App die Einstellungen und kontrolliere die vollständige HTTPS-Adresse des Camper-Servers. Die Adresse muss mit <code>https://</code> beginnen.</p>
+        </article>
+        <article>
+          <span class="step">03</span>
+          <h3>Keine Pushmeldung</h3>
+          <p>Erlaube Benachrichtigungen unter „Einstellungen → Mitteilungen → CamperVan“ und öffne die App danach einmal bei bestehender Serververbindung.</p>
+        </article>
+        <article>
+          <span class="step">04</span>
+          <h3>Standort fehlt</h3>
+          <p>Erlaube den Standortzugriff während der App-Nutzung. Die Fahrzeugposition stammt vom Camper-System; der iPhone-Standort dient der Karten- und Navigationsfunktion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="privacy-note" aria-labelledby="privacy-title">
+      <div>
+        <p class="eyebrow">PRIVAT BY DESIGN</p>
+        <h2 id="privacy-title">Fahrzeugdaten bleiben im persönlichen System.</h2>
+      </div>
+      <p>Die App verwendet keine Werbung und kein Nutzertracking. Sie kommuniziert mit dem vom Nutzer eingerichteten Raspberry-Pi-Server. Weitere Einzelheiten stehen in der <a href="datenschutz/">Datenschutzerklärung</a>.</p>
+    </section>
+
+    <section class="contact" id="kontakt" aria-labelledby="contact-title">
+      <p class="eyebrow">KONTAKT</p>
+      <h2 id="contact-title">Noch nicht gelöst?</h2>
+      <p>Schreibe bitte eine kurze Beschreibung, die App-Version und – falls möglich – einen Screenshot dazu.</p>
+      <a class="contact-link" href="mailto:christoph.herzog@live.de?subject=CamperVan%20Mobile%20Support">
+        christoph.herzog@live.de <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Christoph Herzog</span>
+    <span>CamperVan Mobile Support</span>
+  </footer>
+</body>
+</html>
